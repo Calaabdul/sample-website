@@ -150,7 +150,7 @@ img {
 }
 .scroll {
   font-weight: 200;
-  transition: 0.3s all ease;
+  /* transition: 0.3s all ease; */
 }
 .gallery {
   margin-left: 1rem;
@@ -163,6 +163,18 @@ img {
   font-weight: 200;
   color: grey;
   letter-spacing: 2px;
+}
+.gallery .images,
+.gallery h4 {
+  /* opacity: 0; */
+  transform: translateY(50px);
+  transition: transform 1s ease;
+}
+.gallery:hover .images,
+.gallery:focus-within .images,
+.gallery:hover h4 {
+  transform: translateY(0);
+  /* opacity: 1; */
 }
 .image_wrapper {
   display: flex;
